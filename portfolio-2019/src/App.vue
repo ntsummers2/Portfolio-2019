@@ -6,7 +6,6 @@
 
 <script>
 import LandingBanner from './components/LandingBanner.vue'
-import Normalize from './assets/styles/normalize.css'
 
 export default {
   name: 'app',
