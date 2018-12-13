@@ -1,5 +1,5 @@
 <template>
-  <div :style="{'background-image': 'url(' + require('../assets/images/bannerbackground2.jpg') + ')'}" class="banner">
+  <div class="banner">
     <div class="banner-overlay">
       <div class="banner-text-container">
         <h1 class="bold-text">
@@ -33,6 +33,8 @@ export default {
 .banner {
   height: 100%; width: 100%;
   @include bp(lg) { height: 90%; width: 100%; }
+
+  background-image: url('../assets/images/bannerbackground2.jpg');
   background-repeat:no-repeat;
   background-size:cover;
   background-position:center;
@@ -83,7 +85,7 @@ export default {
 
         span {
           background-color: $green-transparent;
-          @include bp(lg) { background-color: none; }
+          @include bp(lg) { background-color: transparent; }
         }
       }
     }
@@ -111,7 +113,7 @@ export default {
 
         span {
           background-color: $green-transparent;
-          @include bp(lg) { background-color: none; }
+          @include bp(lg) { background-color: transparent; }
         }
       }
     }
