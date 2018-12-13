@@ -53,18 +53,22 @@ export default {
 
 	&-header {
 		margin: 0; padding: 40px 0;
-		font-family: $heading;
+
+    font-family: $heading;
     font-size: 32px;
     @include bp(sm) { font-size: 48px; }
     @include bp(md) { font-size: 60px; }
 		letter-spacing: 0;
+    color: $dark-purple;
 	}
 
   &-projects {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(auto-fill, 400px);
-    grid-row-gap: .5em;
+    grid-template-columns: 1fr;
+    @include bp(md) { grid-template-columns: repeat(2, 1fr); }
+    @include bp(lg) { grid-template-columns: repeat(3, 1fr); }
+    grid-auto-rows: minmax(400px, auto);
+    grid-row-gap: 1em;
     grid-column-gap: 1em;
   }
 
@@ -90,6 +94,7 @@ export default {
       }
 
       &:hover {
+        text-decoration: none;
 
         &:after {
           background: rgba($dark-purple, .2);
