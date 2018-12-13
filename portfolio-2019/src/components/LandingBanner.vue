@@ -41,6 +41,7 @@ export default {
 
   &-overlay {
     height: 100%; width: 100%;
+    background: transparent;
 
     @include bp(lg) {
       background: $green;  /* fallback for old browsers */
@@ -52,6 +53,7 @@ export default {
 
   &-text-container {
     padding: 20px;
+    @include bp(md) { padding: 20px 40px; }
 
     box-sizing: border-box;
 
