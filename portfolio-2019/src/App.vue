@@ -1,16 +1,19 @@
 <template>
   <div id="app">
     <LandingBanner/>
+    <Projects/>
   </div>
 </template>
 
 <script>
 import LandingBanner from './components/LandingBanner.vue'
+import Projects from './components/Projects.vue'
 
 export default {
   name: 'app',
   components: {
-    LandingBanner
+    LandingBanner,
+    Projects
   }
 }
 </script>
