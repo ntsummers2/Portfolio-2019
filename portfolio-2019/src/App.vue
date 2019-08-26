@@ -2,21 +2,21 @@
   <div id="app">
     <LandingBanner/>
     <Projects/>
-    <SocialSites/>
+    <Footer/>
   </div>
 </template>
 
 <script>
 import LandingBanner from './components/LandingBanner.vue'
 import Projects from './components/Projects.vue'
-import SocialSites from './components/SocialSites.vue'
+import Footer from './components/Footer.vue'
 
 export default {
   name: 'app',
   components: {
     LandingBanner,
     Projects,
-    SocialSites
+    Footer
   }
 }
 </script>

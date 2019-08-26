@@ -5,10 +5,16 @@ $light-green: #A3F7B5;
 $dark-purple: #383C69;
 
 //Generic Base Colors
-$black: #121211;
+$black: #121212;
 $lighter-black: #232734;
+$lightest-black: #333;
 $light-grey: #ededed;
 $white: #fff;
+
+//Color Settings
+$project-header: $black;
+
+$footer-background: $lightest-black;
 
 // Typography
 $heading: 'Merriweather', serif;
@@ -35,6 +41,8 @@ $content: 'Poppins', sans-serif;
 }
 
 // Global Styles
+$max-width: 1200px;
+
 .clear { clear: both; }
 
 html { width: 100%; height: 100%; box-sizing: border-box; }
