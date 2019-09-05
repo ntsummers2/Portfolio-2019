@@ -5,9 +5,8 @@
       <div class="all-projects">
         <div v-for="project in projects" :key="project.name" class="all-project">
           <a class="all-project-url" :href="project.url">
-            <div class="all-project-name">
-              {{ project.name }}
-            </div>
+            <font-awesome-icon class="all-project-icon" :icon="[project.type, project.icon]" />
+            <div class="all-project-name">{{ project.name }} </div>
           </a>
         </div>
       </div>
@@ -22,20 +21,40 @@ export default {
     return {
       projects: [
         {
+          name: 'MSU iOS App',
+          url: 'https://msu.app',
+          type: 'fab',
+          icon: 'apple'
+        },
+        {
+          name: 'MSU Android App',
+          url: 'https://msu.app',
+          type: 'fab',
+          icon: 'android'
+        },
+        {
           name: 'Search',
-          url: 'https://search.msu.edu'
+          url: 'https://search.msu.edu',
+          type: 'fas',
+          icon: 'search'
         },
         {
           name: 'Maps',
-          url: 'https://maps.msu.edu'
+          url: 'https://maps.msu.edu',
+          type: 'fas',
+          icon: 'map'
         },
         {
           name: 'Qualtrics',
-          url: 'https://qualtrics.msu.edu'
+          url: 'https://qualtrics.msu.edu',
+          type: 'fas',
+          icon: 'vote-yea'
         },
         {
           name: 'USearch',
           url: 'https://usearch.msu.edu',
+          type: 'fas',
+          icon: 'search-plus'
         }
       ]
     }
@@ -56,8 +75,9 @@ export default {
 
     font-family: $heading;
     font-size: 32px;
-    @include bp(sm) { font-size: 48px; }
-    @include bp(md) { font-size: 60px; }
+    @include bp(md) { font-size: 42px; }
+    @include bp(lg) { font-size: 48px; }
+    @include bp(xlg) { font-size: 60px; }
 		letter-spacing: 0;
     color: $dark-purple;
 	}
@@ -67,22 +87,39 @@ export default {
     grid-template-columns: 1fr;
     @include bp(md) { grid-template-columns: repeat(2, 1fr); }
     @include bp(lg) { grid-template-columns: repeat(3, 1fr); }
-    grid-auto-rows: minmax(400px, auto);
-    grid-row-gap: 1em;
-    grid-column-gap: 1em;
+    grid-auto-rows: minmax(200px, auto);
+    @include bp(md) { grid-auto-rows: minmax(300px, auto); }
+    @include bp(lg) { grid-auto-rows: minmax(400px, auto); }
+    grid-row-gap: 3em;
+    grid-column-gap: 3em;
   }
 
 	&-project {
 
     &-url {
       width: 100%; height: 100%;
+      margin: 0px; padding: 30px;
+
+      background-color: #fff;
+      border-radius: 8px;
 
       display: flex;
-      align-items: flex-end;
       flex-direction: column;
-      justify-content: flex-end;
+      justify-content: center;
+      flex: 1 1 100%;
 
       position: relative;
+
+      overflow: hidden;
+
+      -webkit-box-shadow: 0 13px 27px -5px rgba(50,50,93,.25), 0 8px 16px -8px rgba(0,0,0,.3), 0 -6px 16px -6px rgba(0,0,0,.025);
+      box-shadow: 0 13px 27px -5px rgba(50,50,93,.25), 0 8px 16px -8px rgba(0,0,0,.3), 0 -6px 16px -6px rgba(0,0,0,.025);
+      -webkit-transition-property: color,background-color,-webkit-box-shadow,-webkit-transform;
+      transition-property: color,background-color,-webkit-box-shadow,-webkit-transform;
+      transition-property: color,background-color,box-shadow,transform;
+      transition-property: color,background-color,box-shadow,transform,-webkit-box-shadow,-webkit-transform;
+      -webkit-transition-duration: .15s;
+      transition-duration: .15s;
 
       &:after {
         content: "";
@@ -91,6 +128,7 @@ export default {
         height: 100%; width: 100%;
 
         position: absolute;
+        top: 0; left: 0;
       }
 
       &:hover {
@@ -105,10 +143,19 @@ export default {
       }
     }
 
+    &-icon {
+      height: 90%;
+      align-self: center;
+      font-size: 48px;
+      @include bp(md) { font-size: 60px; }
+      @include bp(lg) { font-size: 80px; }
+    }
+
     &-name {
       font-family: $content;
       font-size: 32px;
       color: $dark-purple;
+      align-self: flex-end;
     }
 	}
 }

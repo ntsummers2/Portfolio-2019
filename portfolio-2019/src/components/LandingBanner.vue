@@ -90,6 +90,7 @@ export default {
 
       pre {
         font-family: $heading;
+        font-size: 32px;
         @include bp(md) { font-size: 42px; }
         @include bp(lg) { font-size: 48px; }
         @include bp(xlg) { font-size: 60px; }

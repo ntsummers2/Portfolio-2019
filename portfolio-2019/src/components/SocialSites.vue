@@ -36,6 +36,11 @@ export default {
           name: 'LinkedIn',
           url: 'https://qualtrics.msu.edu',
           icon: 'linkedin'
+        },
+        {
+          name: 'Twitter',
+          url: 'https://twitter.com/NickitySums',
+          icon: 'twitter'
         }
       ]
     }
@@ -56,19 +61,17 @@ export default {
 
     font-family: $heading;
     font-size: 32px;
-    @include bp(sm) { font-size: 48px; }
-    @include bp(md) { font-size: 60px; }
+    @include bp(md) { font-size: 42px; }
+    @include bp(lg) { font-size: 48px; }
+    @include bp(xlg) { font-size: 60px; }
 		letter-spacing: 0;
     color: $dark-purple;
 	}
 
   &-sites {
     display: grid;
-    grid-template-columns: 1fr;
-    @include bp(md) { grid-template-columns: repeat(2, 1fr); }
-    @include bp(lg) { grid-template-columns: repeat(3, 1fr); }
-    grid-auto-rows: minmax(400px, auto);
-    grid-row-gap: 1em;
+    grid-template-rows: 1fr;
+    grid-auto-columns: 200px;
     grid-column-gap: 1em;
   }
 
