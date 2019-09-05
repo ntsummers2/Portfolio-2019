@@ -4,17 +4,16 @@
       <div class="banner-text-container">
         <h1 class="bold-text">
           <pre><span>Hey there!
-My name's Nick.</span></pre>
+I'm Nick.</span></pre>
         </h1>
         <p class="descriptive-text">
           <pre>
 
-<span>I'm a fullstack developer thats loves designing and creating new applications and websites that push the envelope and make peoples lives easier.
-
-Speaking of, how can I help you?</span></pre>
+<span>I'm a fullstack developer thats loves designing and creating new applications and websites that push the envelope and make peoples lives easier.</span></pre>
         </p>
       </div>
     </div>
+    <div class="banner-side"></div>
   </div>
 </template>
 
@@ -32,23 +31,40 @@ export default {
 
 .banner {
   height: 100%; width: 100%;
-  @include bp(lg) { height: 90%; width: 100%; }
+  max-height: 670px;
 
-  background-image: url('../assets/images/bannerbackground2.jpg');
-  background-repeat:no-repeat;
-  background-size:cover;
-  background-position:center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2fr 1fr;
+  @include bp (md) { 
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+  }
+  background-color: #12434c;
+
+  &-side {
+    width: 100%; height: 100%;
+    max-width: 670px;
+
+    margin: 0 auto;
+
+    order: 1;
+    @include bp(md) { order: 2; }
+
+    background-color: #12434c;
+    background-image: url('../assets/images/me-400px.png');
+    @include bp(lg) { background-image: url('../assets/images/me-800px.png');}
+    background-repeat:no-repeat;
+    background-size: contain;
+    background-position:center;
+  }
 
   &-overlay {
     height: 100%; width: 100%;
-    background: transparent;
+    background: $green;
 
-    @include bp(lg) {
-      background: $green;  /* fallback for old browsers */
-      background: -webkit-linear-gradient(right, $green-transparent 50%, transparent 50%);
-      background: -o-linear-gradient(right, $green-transparent 50%, transparent 50%);
-      background: linear-gradient(to right, $green-transparent 50%, transparent 50%);  /* Chrome 10-25, Safari 5.1-6 */ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    }
+    order: 2;
+    @include bp(md) { order: 1; }
   }
 
   &-text-container {
@@ -58,8 +74,6 @@ export default {
     box-sizing: border-box;
 
     height: 100%; width: 100%;
-    @include bp(sm) { width: 66.666%; }
-    @include bp(lg) { width: 50%; }
 
     display: flex;
     align-items: center;
@@ -70,13 +84,15 @@ export default {
 
       display: flex;
 
-      height: 50%; width: 100%;
+      height: auto; width: 100%;
+      @include bp(md) { height: 33.3333%; }
+      @include bp(lg) { height: 50%; }
 
       pre {
         font-family: $heading;
-        font-size: 32px;
-        @include bp(sm) { font-size: 48px; }
-        @include bp(md) { font-size: 60px; }
+        @include bp(md) { font-size: 42px; }
+        @include bp(lg) { font-size: 48px; }
+        @include bp(xlg) { font-size: 60px; }
         font-weight: bold;
         color: #fff;
         white-space: pre-wrap;
