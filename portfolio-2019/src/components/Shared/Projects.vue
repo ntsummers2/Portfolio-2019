@@ -4,7 +4,7 @@
       <h2 class="all-header">Projects</h2>
       <div class="all-projects">
         <div v-for="project in projects" :key="project.name" class="all-project">
-          <router-link class="all-project-url" :to="project.url">
+          <router-link class="all-project-url" :to="project.url" v-bind:project="project">
             <font-awesome-icon class="all-project-icon" :icon="[project.type, project.icon]" />
             <div class="all-project-name">{{ project.name }} </div>
           </router-link>

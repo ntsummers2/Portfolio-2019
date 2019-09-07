@@ -14,7 +14,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import url('https://fonts.googleapis.com/css?family=Merriweather|Poppins');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700|Poppins:200,400');
 @import 'assets/styles/global.scss';
 
 #app {
