@@ -1,14 +1,12 @@
 <template>
-  <div class="">
-    <div class="all">
-      <h2 class="all-header">Projects</h2>
-      <div class="all-projects">
-        <div v-for="project in projects" :key="project.name" class="all-project">
-          <router-link class="all-project-url" :to="project.url" v-bind:project="project">
-            <font-awesome-icon class="all-project-icon" :icon="[project.type, project.icon]" />
-            <div class="all-project-name">{{ project.name }} </div>
-          </router-link>
-        </div>
+  <div class="all">
+    <h2 class="all-header">Projects</h2>
+    <div class="all-projects">
+      <div v-for="project in projects" :key="project.name" class="all-project">
+        <router-link class="all-project-url" :to="project.url" v-bind:project="project">
+          <font-awesome-icon class="all-project-icon" :icon="[project.type, project.icon]" />
+          <div class="all-project-name">{{ project.name }} </div>
+        </router-link>
       </div>
     </div>
   </div>
@@ -70,17 +68,21 @@ export default {
   padding: 20px;
   @include bp(md) { padding: 20px 40px; }
 
+  background: #fffffa;
+
 	&-header {
-    margin: 0; padding: 20px 0 40px 0;
-    @include bp(md) { padding: 40px 0px; }
+    max-width: 1100px;
+
+    padding: 20px; margin: 0 auto;
 
     font-family: $heading;
     font-size: 32px;
     @include bp(md) { font-size: 42px; }
     @include bp(lg) { font-size: 48px; }
     @include bp(xlg) { font-size: 60px; }
-		letter-spacing: 0;
-    color: $dark-purple;
+    letter-spacing: 0;
+    
+    color: #12434C;
 	}
 
   &-projects {
@@ -94,6 +96,10 @@ export default {
     @include bp(lg) { grid-auto-rows: minmax(300px, auto); }
     grid-row-gap: 3em;
     grid-column-gap: 3em;
+
+    max-width: 1100px;
+
+    padding: 20px; margin: 0 auto;
   }
 
 	&-project {
@@ -123,6 +129,8 @@ export default {
       -webkit-transition-duration: .15s;
       transition-duration: .15s;
 
+      text-decoration-color: #12434C;
+
       &:after {
         content: "";
         display: block;
@@ -147,7 +155,7 @@ export default {
         }
 
         .all-project-name {
-          font-size: 32px;
+          font-size: 28px;
         }
       }
     }
@@ -158,11 +166,13 @@ export default {
       font-size: 48px;
       @include bp(md) { font-size: 60px; }
       @include bp(lg) { font-size: 72px; }
+
+      color: #42C9A3;
     }
 
     &-name {
       font-family: $content; font-size: 24px;
-      color: $dark-purple;
+      color: #12434C;
       text-align: right;
 
       align-self: flex-end;

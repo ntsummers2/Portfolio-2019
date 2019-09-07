@@ -104,8 +104,7 @@ export default {
         align-self: flex-end;
 
         span {
-          background-color: $green-transparent;
-          @include bp(lg) { background-color: transparent; }
+          color: #12434C;
         }
       }
     }
@@ -132,8 +131,7 @@ export default {
         align-self: flex-start;
 
         span {
-          background-color: $green-transparent;
-          @include bp(lg) { background-color: transparent; }
+          color: #12434C;
         }
       }
     }
