@@ -27,11 +27,12 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-@import '../assets/styles/global.scss';
+@import '../../assets/styles/global.scss';
 
 .banner {
   height: 100%; width: 100%;
   max-height: 670px;
+  @include bp(sm) { height: 670px; }
 
   display: grid;
   grid-template-columns: 1fr;
@@ -52,8 +53,8 @@ export default {
     @include bp(md) { order: 2; }
 
     background-color: #12434c;
-    background-image: url('../assets/images/me-400px.png');
-    @include bp(lg) { background-image: url('../assets/images/me-800px.png');}
+    background-image: url('../../assets/images/me-400px.png');
+    @include bp(lg) { background-image: url('../../assets/images/me-800px.png');}
     background-repeat:no-repeat;
     background-size: contain;
     background-position:center;

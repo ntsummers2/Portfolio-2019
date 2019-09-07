@@ -1,12 +1,12 @@
 <template>
   <div class="">
     <div class="all">
-      <h2 class="all-header">Projects</h2>
-      <div class="all-projects">
-        <div v-for="project in projects" :key="project.name" class="all-project">
-          <a class="all-project-url" :href="project.url">
-            <font-awesome-icon class="all-project-icon" :icon="[project.type, project.icon]" />
-            <div class="all-project-name">{{ project.name }} </div>
+      <h2 class="all-header">Talks</h2>
+      <div class="all-talks">
+        <div v-for="project in projects" :key="project.name" class="all-talk">
+          <a class="all-talk-url" :href="project.url">
+            <font-awesome-icon class="all-talk-icon" :icon="[project.type, project.icon]" />
+            <div class="all-talk-name">{{ project.name }} </div>
           </a>
         </div>
       </div>
@@ -16,7 +16,7 @@
 
 <script>
 export default {
-  name: 'Projects',
+  name: 'Talks',
   data () {
     return {
       projects: [
@@ -25,36 +25,6 @@ export default {
           url: 'https://msu.app',
           type: 'fab',
           icon: 'apple'
-        },
-        {
-          name: 'MSU Android App',
-          url: 'https://msu.app',
-          type: 'fab',
-          icon: 'android'
-        },
-        {
-          name: 'Search',
-          url: 'https://search.msu.edu',
-          type: 'fas',
-          icon: 'search'
-        },
-        {
-          name: 'Maps',
-          url: 'https://maps.msu.edu',
-          type: 'fas',
-          icon: 'map'
-        },
-        {
-          name: 'Qualtrics',
-          url: 'https://qualtrics.msu.edu',
-          type: 'fas',
-          icon: 'vote-yea'
-        },
-        {
-          name: 'USearch',
-          url: 'https://usearch.msu.edu',
-          type: 'fas',
-          icon: 'search-plus'
         }
       ]
     }
@@ -64,14 +34,15 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-@import '../assets/styles/global.scss';
+@import '../../assets/styles/global.scss';
 
 .all {
   padding: 20px;
   @include bp(md) { padding: 20px 40px; }
 
 	&-header {
-		margin: 0; padding: 40px 0;
+    margin: 0; padding: 20px 0 40px 0;
+    @include bp(md) { padding: 40px 0px; }
 
     font-family: $heading;
     font-size: 32px;
@@ -82,19 +53,20 @@ export default {
     color: $dark-purple;
 	}
 
-  &-projects {
+  &-talks {
     display: grid;
     grid-template-columns: 1fr;
-    @include bp(md) { grid-template-columns: repeat(2, 1fr); }
-    @include bp(lg) { grid-template-columns: repeat(3, 1fr); }
+    @include bp(sm) { grid-template-columns: repeat(2, 1fr); }
+    @include bp(md) { grid-template-columns: repeat(3, 1fr); }
+    @include bp(lg) { grid-template-columns: repeat(4, 1fr); }
     grid-auto-rows: minmax(200px, auto);
     @include bp(md) { grid-auto-rows: minmax(300px, auto); }
-    @include bp(lg) { grid-auto-rows: minmax(400px, auto); }
+    @include bp(lg) { grid-auto-rows: minmax(300px, auto); }
     grid-row-gap: 3em;
     grid-column-gap: 3em;
   }
 
-	&-project {
+	&-talk {
 
     &-url {
       width: 100%; height: 100%;
@@ -137,8 +109,15 @@ export default {
         &:after {
           background: rgba($dark-purple, .2);
         }
+
+        .all-project-icon {
+          font-size: 54px;
+          @include bp(md) { font-size: 68px; }
+          @include bp(lg) { font-size: 88px; }
+        }
+
         .all-project-name {
-          font-size: 42px;
+          font-size: 32px;
         }
       }
     }
@@ -148,13 +127,14 @@ export default {
       align-self: center;
       font-size: 48px;
       @include bp(md) { font-size: 60px; }
-      @include bp(lg) { font-size: 80px; }
+      @include bp(lg) { font-size: 72px; }
     }
 
     &-name {
-      font-family: $content;
-      font-size: 32px;
+      font-family: $content; font-size: 24px;
       color: $dark-purple;
+      text-align: right;
+
       align-self: flex-end;
     }
 	}

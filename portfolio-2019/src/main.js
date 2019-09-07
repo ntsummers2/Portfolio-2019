@@ -1,5 +1,10 @@
 import Vue from 'vue'
+import VueRouter from 'vue-router'
 import App from './App.vue'
+
+//Import Pages
+import Home from './components/Pages/Home.vue'
+import MsuApp from './components/Pages/MsuApp.vue'
 
 // Import Styles
 import './assets/styles/normalize.css'
@@ -14,8 +19,19 @@ library.add(faGithub, faLinkedin, faCodepen, faAndroid, faApple, faSearch, faMap
 
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 
+//Setup Router
+Vue.use(VueRouter)
+const routes = [
+  { path: '/', component: Home },
+  { path: '/msuapp', component: MsuApp }
+]
+const router = new VueRouter({
+  routes
+})
+
 Vue.config.productionTip = false
 
 new Vue({
+  router,
   render: h => h(App),
 }).$mount('#app')
