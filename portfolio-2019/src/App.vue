@@ -1,28 +1,20 @@
 <template>
   <div id="app">
-    <LandingBanner/>
-    <Projects/>
-    <Footer/>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import LandingBanner from './components/LandingBanner.vue'
-import Projects from './components/Projects.vue'
-import Footer from './components/Footer.vue'
 
 export default {
   name: 'app',
   components: {
-    LandingBanner,
-    Projects,
-    Footer
   }
 }
 </script>
 
 <style lang="scss">
-@import url('https://fonts.googleapis.com/css?family=Merriweather|Poppins');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700|Poppins:200,400');
 @import 'assets/styles/global.scss';
 
 #app {
