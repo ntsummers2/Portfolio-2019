@@ -9,13 +9,21 @@
     "description": {
         "paragraphs": {
             "1": {
-                "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                "content": "The official app of Michigan State University, released for iOS and android devices. This app allows you to keep up-to-date with the latest events, read top news stories, explore the in-depth map of campus, and review dining options—all from your mobile device. In addition, we are currently looking to add parking options to app, as well as building out a discover tab to let students find clubs, majors, classes, and more."
             },
             "2": {
-                "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                "content": "During my time working on the MSU App, I took on the role of Designer, iOS Developer, and Android Developer. Being on a team of 3 allowed me to wear many hats, while learning from my peers about mobile development. I had never done mobile development before (Outside of a typical one off test app), so this opportunity was fantastic for me to explore this landscape. Early on in the project, I implemented a lot of features into the android side. In particular, I worked on adding bus positions and dining locations on the map fragment, cleaned up the app to follow accessibility guidelines, and recently started redesigning the app.",
+                "image": {
+                    "src": "bannerbackground2.jpg",
+                    "alt": "A before and after visual of my work on the MSU App",
+                    "subtitle": "A before and after visual of my work on the MSU App"
+                }
             },
             "3": {
-                "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                "content": "Redesigning the app was an awesome experience. I had played around in Sketch and Adobe InDesign for awhile trying out new was to provide the best user experience, but MSU was able to partner with Apple's Design Lab. The team flew out to Cupertino for a 3 day workshop on user exerperience and design principles. I was able to work alongside the designers and students we had brought to help redesign the app and find what features really mattered. After that workshop, I came back to MSU and started working on new designs based on the lessons we learned from the workshop. I made sure the refine my ideas as much as possible with students, meeting multiple times during the process to hear their thoughts."
+            },
+            "4": {
+                "content": "Since then, we've got the green light on my redesign are now implementing it on iOS! Android will be following suit soon after (The unfortunate nature of a small team). I'm really proud of the work i've done so far, and looking forward to keep learning and developing this app to the best of my ability."
             }
         }
     },

@@ -1,7 +1,9 @@
 <template>
   <div class="MainContent">
     <div v-for="paragraph in project.paragraphs" :key="paragraph" class="MainContent-Content">
-      <p> {{ paragraph.content }} </p> 
+      <p class="MainContent-Text"> {{ paragraph.content }} </p> 
+      <img v-if="paragraph.image" :src="require('@/assets/images/' + paragraph.image.src)" :alt="project.alt">
+      <p class="MainContent-Subtitle" v-if="paragraph.image"> {{ paragraph.image.subtitle }} </p>
     </div>
   </div>
 </template>
@@ -26,11 +28,29 @@ export default {
 
   padding: 0px 15px; margin: 0;
 
-  p {
-    font-family: $content; font-style: normal; font-weight: 400; font-size: 1.1em;
+  &-Text {
+    font-family: $content; font-style: normal; font-weight: 200; font-size: 1.1em;
     letter-spacing: normal;
     line-height: 1.2;
     color: #333;
+  }
+
+  img {
+    width: 100%;
+    object-fit: cover;
+
+    margin: 0 auto;
+  }
+
+  &-Subtitle {
+    font-family: $content; font-style: italic; font-weight: 200; font-size: .9em;
+    letter-spacing: normal;
+    line-height: 1;
+    color: #333;
+
+    margin: 0; padding: 3px 0; 
+    
+    border-bottom: 1px solid #8AB0AB;
   }
 }
 

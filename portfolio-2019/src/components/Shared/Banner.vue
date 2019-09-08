@@ -1,17 +1,18 @@
 <template>
   <div class="Banner">
-    <div class="Banner-Background" v-bind:src="'../../assets/images/' + project.image" :alt="project.alt">
-        <div class="Banner-Container">
-            <h1 class="Banner-Title">{{ project.title }} </h1>
-            <h3 class="Banner-Description">{{ project.description }} </h3>
-            <a class="Banner-Link" :href="project.url"> Check it out here! </a>
-        </div>
-        <div class="Banner-Return">
-            <router-link to="/">
-                <font-awesome-icon :icon="['fas', 'arrow-left']"/>
-                <p>Home</p>
-            </router-link>
-        </div>
+    <div class="Banner-Background">
+        <img :src="require('@/assets/images/' + project.image)" :alt="project.alt">
+    </div>
+    <div class="Banner-Container">
+        <h1 class="Banner-Title">{{ project.title }} </h1>
+        <h3 class="Banner-Description">{{ project.description }} </h3>
+        <a class="Banner-Link" :href="project.url"> Check it out here! </a>
+    </div>
+    <div class="Banner-Return">
+        <router-link to="/">
+            <font-awesome-icon :icon="['fas', 'arrow-left']"/>
+            <p>Home</p>
+        </router-link>
     </div>
   </div>
 </template>
@@ -33,20 +34,36 @@ export default {
 
 .Banner {
     height: 100%; width: 100%;
+    min-height: 500px;
 
     position: relative;
 
-    padding: 0; margin: 0 0 30px 0;
+    padding: 0; margin: 0 0 5px 0;
+
+    &-Background {
+        position: absolute;
+        top: 0; left: 0; 
+
+        width: 100%; height: 100%;
+
+        img {
+            width: 100%; height: 100%;
+            object-fit: cover;
+        }
+    }
 
     &-Container {
+        position: absolute;
+        top: 0; left: 0; 
+
+        width: 100%; height: 100%;
+
         align-items: center;
         display: flex;
         flex-flow: column; flex-wrap: wrap;
         justify-content: center;
         
         padding: 100px 16px; margin-bottom: 16px;
-
-        min-height: 500px;
 
         background: rgba($color: $project-banner-background, $alpha: .1);
     }
@@ -102,11 +119,15 @@ export default {
             font-family: $content; font-style: normal; font-weight: 400; font-size: 1.45em;
             letter-spacing: normal;
             line-height: 1.2;
-            text-transform: none; text-align: center;
+            text-transform: none; text-align: center; text-decoration: underline;
 
             color: #000;
 
             padding: 0 0 0 8px; margin: 0;
+
+            &:hover {
+                text-decoration: none;
+            }
         }
     }
 }
