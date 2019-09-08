@@ -1,7 +1,7 @@
 //Color Pallette
 $green: #40C9A2;
-$green-transparent: rgba(64,201,162, .93);
-$light-green: #A3F7B5;
+$dark-blue: #12434C;
+$baby-powder: #FFFFFA;
 $dark-purple: #383C69;
 
 //Generic Base Colors
@@ -12,9 +12,15 @@ $light-grey: #ededed;
 $white: #fff;
 
 //Color Settings
-$project-header: $black;
+$background: $baby-powder;
+$banner-background: $green;
+$banner-text: $dark-blue;
+$header: $dark-blue;
 
-$footer-background: $lightest-black;
+$project-icon-color: $green;
+$project-text-color: $dark-blue;
+
+$project-banner-background: $green;
 
 // Typography
 $heading: 'Merriweather', serif;

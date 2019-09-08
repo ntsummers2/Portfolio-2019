@@ -19,7 +19,7 @@
             }
         }
     },
-    "sidebar": {
+    "topbar": {
         "startDate": "May 31, 2019",
         "endDate": "Ongoing",
         "tech": ["Kotlin", "Swift", "AWS", "Sketch", "Adobe Suite"],

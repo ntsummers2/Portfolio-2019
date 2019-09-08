@@ -41,7 +41,7 @@ export default {
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr;
   }
-  background-color: #12434c;
+  background-color: $dark-blue;
 
   &-side {
     width: 100%; height: 100%;
@@ -52,7 +52,7 @@ export default {
     order: 1;
     @include bp(md) { order: 2; }
 
-    background-color: #12434c;
+    background-color: $dark-blue;
     background-image: url('../../assets/images/me-400px.png');
     @include bp(lg) { background-image: url('../../assets/images/me-800px.png');}
     background-repeat:no-repeat;
@@ -62,7 +62,7 @@ export default {
 
   &-overlay {
     height: 100%; width: 100%;
-    background: $green;
+    background: $banner-background;
 
     order: 2;
     @include bp(md) { order: 1; }
@@ -104,7 +104,7 @@ export default {
         align-self: flex-end;
 
         span {
-          color: #12434C;
+          color: $banner-text;
         }
       }
     }
@@ -131,7 +131,7 @@ export default {
         align-self: flex-start;
 
         span {
-          color: #12434C;
+          color: $banner-text;
         }
       }
     }

@@ -68,7 +68,7 @@ export default {
   padding: 20px;
   @include bp(md) { padding: 20px 40px; }
 
-  background: #fffffa;
+  background: $background;
 
 	&-header {
     max-width: 1100px;
@@ -82,7 +82,7 @@ export default {
     @include bp(xlg) { font-size: 60px; }
     letter-spacing: 0;
     
-    color: #12434C;
+    color: $header;
 	}
 
   &-projects {
@@ -129,7 +129,7 @@ export default {
       -webkit-transition-duration: .15s;
       transition-duration: .15s;
 
-      text-decoration-color: #12434C;
+      text-decoration-color: $project-text-color;
 
       &:after {
         content: "";
@@ -167,12 +167,12 @@ export default {
       @include bp(md) { font-size: 60px; }
       @include bp(lg) { font-size: 72px; }
 
-      color: #42C9A3;
+      color: $project-icon-color;
     }
 
     &-name {
       font-family: $content; font-size: 24px;
-      color: #12434C;
+      color: $project-text-color;
       text-align: right;
 
       align-self: flex-end;

@@ -48,7 +48,7 @@ export default {
 
         min-height: 500px;
 
-        background: rgba($color: #000000, $alpha: .1);
+        background: rgba($color: $project-banner-background, $alpha: .1);
     }
 
     &-Title {

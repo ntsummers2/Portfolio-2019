@@ -12,11 +12,13 @@ import './assets/styles/normalize.css'
 // Import Fontawesome
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faClock } from '@fortawesome/free-regular-svg-icons'
-import { faSearch, faMap, faSearchPlus, faVoteYea, faArrowLeft } from '@fortawesome/free-solid-svg-icons'
+import { faSearch, faMap, faSearchPlus, faVoteYea, faArrowLeft, faUserTag, faCloud } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faLinkedin, faCodepen, faApple, faAndroid } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
-library.add(faGithub, faLinkedin, faCodepen, faAndroid, faApple, faSearch, faMap, faSearchPlus, faVoteYea, faArrowLeft, faClock)
+library.add(faGithub, faLinkedin, faCodepen, faAndroid, faApple, 
+  faSearch, faMap, faSearchPlus, faVoteYea, faArrowLeft, faClock,
+  faUserTag, faCloud)
 
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 
