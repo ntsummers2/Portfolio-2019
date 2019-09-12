@@ -37,7 +37,10 @@ const routes = [
   { path: '/qualtrics', component: Qualtrics, props: true }
 ]
 const router = new VueRouter({
-  routes
+  routes,
+  scrollBehavior() {
+    return {x: 0, y: 0}
+  }
 })
 
 Vue.config.productionTip = false
