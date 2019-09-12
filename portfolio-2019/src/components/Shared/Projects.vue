@@ -31,12 +31,6 @@ export default {
           icon: 'android'
         },
         {
-          name: 'Search',
-          url: '/search',
-          type: 'fas',
-          icon: 'search'
-        },
-        {
           name: 'Maps',
           url: '/maps',
           type: 'fas',
@@ -47,6 +41,12 @@ export default {
           url: '/qualtrics',
           type: 'fas',
           icon: 'vote-yea'
+        },
+        {
+          name: 'Search',
+          url: '/search',
+          type: 'fas',
+          icon: 'search'
         },
         {
           name: 'USearch',
