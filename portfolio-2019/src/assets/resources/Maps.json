@@ -1,31 +1,28 @@
 {
     "banner": {
-        "title": "MSU Mobile App",
-        "description": "Enhancing the Spartan Experience",
-        "image": "msuappbackground.jpg",
-        "alt": "The MSU mobile app",
-        "url": "https://msu.app"
+        "title": "MSU Maps",
+        "description": "Discover your new home",
+        "image": "mapsbackground.jpg",
+        "alt": "The MSU maps website screenshot",
+        "url": "https://maps.msu.edu"
     },
     "description": {
         "paragraphs": {
             "1": {
-                "content": "This is the official app of Michigan State University and is released for iOS and Android devices. This app allows you to keep up-to-date with the latest events, top news stories, explore the in-depth map of MSU campus, review dining options, and see grades and your schedule—all from your mobile device. Also, we are currently looking to add parking options to the app, as well as building out a discover tab to let students find clubs, majors, classes, and more."
+                "content": "The MSU Maps was my baby when I was working as a Student Programmer at Michigan State. My first task was to add the construction overlays onto the map. This included taking a JSON file of coordinates describing road closures, road detours, and closed areas and outputting that onto the map in a toggleable fashion. No pressure really, this was only going to be seen by every MSU student or parent, not to mention this was the very first website I had ever done any work on. This was also before I had even been able to take any programming classes at MSU. Talk about jumping into the fire..."
             },
             "2": {
-                "content": "During my time working on the MSU App, I took on the role of Designer, iOS Developer, and Android Developer. Being on a team of 3 allowed me to wear many hats while learning from my peers about mobile development. I had never done mobile development before (Outside of a typical one-off test app), so this opportunity was fantastic for me. Early on in the project, I implemented a lot of features on the Android side. In particular, I worked on adding bus positions and dining locations on the map fragment, cleaned up the app to follow accessibility guidelines, and recently started redesigning the app."
+                "content": "Getting through that first month was crazy. What is Javascript? How do I style something? Why does this work in Chrome but not in IE6? That last question probably being the most relentless pest as it was for many web developers.  But I learned a great deal here and knew that this is where I wanted to be. Being able to go to class every day and know that I was helping the community I was apart of was and still is an awesome feeling. Any time I would hear about some issue a student would face, I would go into work the next day and fix it right away. Want to be able to search the map more effectively? Let me tie the map and the search API I'm also working on together. The layout is unable to be navigated via keyboard? Let me redesign the entire layout so everything is cleaned up and accessible. Want to get directions from your dorm to the engineering building? I've got a wayfinding API I can hook into to fix that too."
             },
             "3": {
-                "content": "Redesigning the app was an awesome experience. I had played around in Sketch and Adobe InDesign for a while trying to figure out what was the best way to provide the best user experience, but MSU was able to partner with Apple's Design Lab. The team flew out to Cupertino for a 3-day workshop on user experience and design principles. I was able to work alongside the designers at Apple and students we had brought to help redesign the app and find what features mattered. After that workshop, I came back to MSU and started working on the new official designs based on the lessons we learned from the workshop. I made sure the refine my ideas as much as possible with students, meeting multiple times during the process to hear their thoughts."
-            },
-            "4": {
-                "content": "Since then, we've got the green light on my redesign and are now implementing it on iOS! Android will be following suit soon after (The unfortunate nature of a small team). I'm very proud of the work I've done so far, and I am looking forward to learning and developing this app to the best of my ability."
+                "content": "I was able to overcome my fears and worries and implement that first feature and go on to implement many more. Maps.msu.edu is a site I can truly say I wrote and touched every single line of code in. Over the course of 3 years, I was able to take it from its 2008 roots and bring it into the modern era with a fresh new layout, updated Javascript, and the introduction of SASS, Grunt, and Bower."
             }
         }
     },
     "topbar": {
-        "startDate": "May 31, 2019",
-        "endDate": "Ongoing",
-        "tech": ["Kotlin", "Swift", "AWS", "Sketch", "Adobe Suite"],
-        "role": ["Designer", "iOS Developer", "Android Developer"]
+        "startDate": "Jan 1, 2014",
+        "endDate": "May 31 2017",
+        "tech": ["Javascript", "jQuery", "CSS/SASS", "Grunt", "Bower", "PHP", "MySQL"],
+        "role": ["Web Developer"]
     }
 }
