@@ -32,25 +32,25 @@ export default {
         },
         {
           name: 'Search',
-          url: 'https://search.msu.edu',
+          url: '/search',
           type: 'fas',
           icon: 'search'
         },
         {
           name: 'Maps',
-          url: 'https://maps.msu.edu',
+          url: '/maps',
           type: 'fas',
           icon: 'map'
         },
         {
           name: 'Qualtrics',
-          url: 'https://qualtrics.msu.edu',
+          url: '/qualtrics',
           type: 'fas',
           icon: 'vote-yea'
         },
         {
           name: 'USearch',
-          url: 'https://usearch.msu.edu',
+          url: '/usearch',
           type: 'fas',
           icon: 'search-plus'
         }
