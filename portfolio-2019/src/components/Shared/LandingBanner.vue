@@ -9,7 +9,7 @@ I'm Nick.</span></pre>
         <p class="descriptive-text">
           <pre>
 
-<span>I'm a fullstack developer thats loves designing and creating new applications and websites that push the envelope and make peoples lives easier.</span></pre>
+<span>I'm a full-stack developer who is in love with creating websites and applications that involve making people's lives easier.</span></pre>
         </p>
       </div>
     </div>
