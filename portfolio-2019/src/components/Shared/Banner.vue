@@ -92,14 +92,22 @@ export default {
     }
 
     &-Link {
-        font-family: $content; font-style: normal; font-weight: 200; font-size: 1.2em;
+        font-family: $content; font-style: normal; font-weight: 400; font-size: 1.2em;
         letter-spacing: normal;
         line-height: 1.24;
         text-transform: none; text-align: center;
 
-        color: $project-banner-link;
+        padding: 5px 10px; margin: 0;
 
-        padding: 0; margin: 0;
+        background: $project-banner-link;
+        color: $dark-blue;
+        
+        border-radius: 3px;
+
+        &:hover {
+            text-decoration: none;
+            background: darken($color: $project-banner-link, $amount: 5)
+        }
     }
 
     &-Return {
