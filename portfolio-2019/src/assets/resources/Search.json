@@ -2,7 +2,7 @@
     "banner": {
         "title": "MSU Search",
         "description": "Find anything and everything MSU",
-        "image": "searchbackground.png",
+        "image": "searchbackground",
         "alt": "MSU Search website",
         "url": "https://search.msu.edu"
     },

@@ -2,7 +2,7 @@
     "banner": {
         "title": "MSU Maps",
         "description": "Discover your new home",
-        "image": "mapsbackground.jpg",
+        "image": "mapsbackground",
         "alt": "The MSU maps website screenshot",
         "url": "https://maps.msu.edu"
     },

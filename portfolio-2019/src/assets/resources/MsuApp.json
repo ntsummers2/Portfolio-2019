@@ -2,7 +2,7 @@
     "banner": {
         "title": "MSU Mobile App",
         "description": "Enhancing the Spartan Experience",
-        "image": "msuappbackground.jpg",
+        "image": "msuappbackground",
         "alt": "The MSU mobile app",
         "url": "https://msu.app"
     },

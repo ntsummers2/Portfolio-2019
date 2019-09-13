@@ -1,7 +1,11 @@
 <template>
   <div class="Banner">
     <div class="Banner-Background">
-        <img :src="require('@/assets/images/' + project.image)" :alt="project.alt">
+        <picture>
+            <source media="(min-width: 1000px)" :srcset="require('@/assets/images/' + project.image + '-1920px.jpg')">
+            <source media="(min-width: 600px)" :srcset="require('@/assets/images/' + project.image + '-1000px.jpg')">
+            <img :src="require('@/assets/images/' + project.image + '-600px.jpg')" :alt="project.alt">
+        </picture>
     </div>
     <div class="Banner-Container">
         <h1 class="Banner-Title">{{ project.title }} </h1>

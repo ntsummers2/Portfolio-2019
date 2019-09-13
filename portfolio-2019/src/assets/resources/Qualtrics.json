@@ -2,7 +2,7 @@
     "banner": {
         "title": "Qualtrics",
         "description": "MSU I.T.'s default website generator",
-        "image": "qualtricsbackground.jpg",
+        "image": "qualtricsbackground",
         "alt": "MSU I.T.'s default website generator",
         "url": "https://qualtrics.msu.edu"
     },
