@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+import VueAnalytics from 'vue-analytics'
 import App from './App.vue'
 
 //Import Pages
@@ -25,6 +26,11 @@ library.add(faGithub, faLinkedin, faCodepen, faAndroid, faApple,
   faUserTag, faCloud)
 
 Vue.component('font-awesome-icon', FontAwesomeIcon)
+
+//Setup Google Analytics
+Vue.use(VueAnalytics, {
+  id: 'UA-83196357-1'
+})
 
 //Setup Router
 Vue.use(VueRouter)
