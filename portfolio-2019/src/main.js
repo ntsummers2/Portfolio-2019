@@ -27,11 +27,6 @@ library.add(faGithub, faLinkedin, faCodepen, faAndroid, faApple,
 
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 
-//Setup Google Analytics
-Vue.use(VueAnalytics, {
-  id: 'UA-83196357-1'
-})
-
 //Setup Router
 Vue.use(VueRouter)
 const routes = [
@@ -47,6 +42,12 @@ const router = new VueRouter({
   scrollBehavior() {
     return {x: 0, y: 0}
   }
+})
+
+//Setup Google Analytics
+Vue.use(VueAnalytics, {
+  id: 'UA-83196357-1',
+  router
 })
 
 Vue.config.productionTip = false

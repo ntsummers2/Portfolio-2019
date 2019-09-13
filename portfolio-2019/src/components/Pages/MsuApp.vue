@@ -14,19 +14,12 @@ import MainContent from '../Shared/MainContent.vue'
 import TopBar from '../Shared/TopBar.vue'
 import msuAppData from '../../assets/resources/MsuApp.json'
 
-import { page } from 'vue-analytics'
-
 export default {
   name: 'MsuApp',
   components: {
     Banner,
     MainContent,
     TopBar
-  },
-  methods: {
-    track () {
-      page('/msuapp')
-    }
   },
   data () {
     return {

@@ -14,19 +14,12 @@ import MainContent from '../Shared/MainContent.vue'
 import TopBar from '../Shared/TopBar.vue'
 import mapsData from '../../assets/resources/Maps.json'
 
-import { page } from 'vue-analytics'
-
 export default {
   name: 'Maps',
   components: {
     Banner,
     MainContent,
     TopBar
-  },
-    methods: {
-    track () {
-      page('/maps')
-    }
   },
   data () {
     return {

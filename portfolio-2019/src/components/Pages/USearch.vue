@@ -14,19 +14,12 @@ import MainContent from '../Shared/MainContent.vue'
 import TopBar from '../Shared/TopBar.vue'
 import USearch from '../../assets/resources/USearch.json'
 
-import { page } from 'vue-analytics'
-
 export default {
   name: 'USearch',
   components: {
     Banner,
     MainContent,
     TopBar
-  },
-  methods: {
-    track () {
-      page('/usearch')
-    }
   },
   data () {
     return {

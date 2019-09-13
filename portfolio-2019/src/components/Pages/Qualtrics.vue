@@ -14,19 +14,12 @@ import MainContent from '../Shared/MainContent.vue'
 import TopBar from '../Shared/TopBar.vue'
 import qualtricsData from '../../assets/resources/Qualtrics.json'
 
-import { page } from 'vue-analytics'
-
 export default {
   name: 'Qualtrics',
   components: {
     Banner,
     MainContent,
     TopBar
-  },
-  methods: {
-    track () {
-      page('/qualtrics')
-    }
   },
   data () {
     return {
