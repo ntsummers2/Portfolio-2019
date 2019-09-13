@@ -49,6 +49,7 @@ export default {
         img {
             width: 100%; height: 100%;
             object-fit: cover;
+            filter: blur(1px);
         }
     }
 
@@ -65,7 +66,7 @@ export default {
         
         padding: 100px 16px; margin-bottom: 16px;
 
-        background: rgba($color: $project-banner-background, $alpha: .1);
+        background: rgba($color: $project-banner-background, $alpha: .63);
     }
 
     &-Title {
@@ -74,7 +75,7 @@ export default {
         line-height: 1.2;
         text-transform: none; text-align: center;
 
-        color: #000;
+        color: $project-banner-text;
 
         padding: 0; margin: 0;
     }
@@ -85,6 +86,8 @@ export default {
         line-height: 1.24;
         text-transform: none; text-align: center;
 
+        color: $project-banner-text;
+
         padding: 10px 0; margin: 0;
     }
 
@@ -93,6 +96,8 @@ export default {
         letter-spacing: normal;
         line-height: 1.24;
         text-transform: none; text-align: center;
+
+        color: $project-banner-link;
 
         padding: 0; margin: 0;
     }
@@ -109,7 +114,7 @@ export default {
             line-height: 1.2;
             text-transform: none; text-align: center;
 
-            color: #000;
+            color: $project-banner-link;
 
             padding: 0; margin: 0;
         }
@@ -121,7 +126,7 @@ export default {
             line-height: 1.2;
             text-transform: none; text-align: center; text-decoration: underline;
 
-            color: #000;
+            color: $project-banner-link;
 
             padding: 0 0 0 8px; margin: 0;
 

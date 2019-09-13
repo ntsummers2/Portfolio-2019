@@ -1,0 +1,22 @@
+{
+    "banner": {
+        "title": "MSU Search",
+        "description": "Find anything and everything MSU",
+        "image": "searchbackground.png",
+        "alt": "MSU Search website",
+        "url": "https://search.msu.edu"
+    },
+    "description": {
+        "paragraphs": {
+            "1": {
+                "content": "MSU Search is the official search engine for anything and everything Michigan State. You can find anything that MSU has listed across all of its websites including departments, people (If you are affiliated with MSU), classes, and tech support. It also has a child site called uSearch that allows MSU sites to have a site specific search."
+            }
+        }
+    },
+    "topbar": {
+        "startDate": "May 31, 2017",
+        "endDate": "Jan 4 2014",
+        "tech": ["PHP", "Javascript", "Angular", "CSS/SASS", "Adobe Suite"],
+        "role": ["Designer", "Web Developer"]
+    }
+}

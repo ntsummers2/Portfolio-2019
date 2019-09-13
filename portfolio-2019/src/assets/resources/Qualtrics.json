@@ -1,0 +1,22 @@
+{
+    "banner": {
+        "title": "Qualtrics",
+        "description": "MSU I.T.'s default website generator",
+        "image": "qualtricsbackground.jpg",
+        "alt": "MSU I.T.'s default website generator",
+        "url": "https://qualtrics.msu.edu"
+    },
+    "description": {
+        "paragraphs": {
+            "1": {
+                "content": "So this website might have you scratching your head. \"Why is this included?\" Well, Qualtrics is actually the very first site created using the Cascade template I made for Michigan State University. In fact, this template was also what set the bar in terms of accessibility when it was published. I worked alongside a team of web accessibility experts to go through each line of code to make sure we did this right, and I'm really proud of that. Any and all websites that are straight forward and are used for mostly internal purposes will be created off this template. This was also my first attempt at Cascade so I was able to learn a lot about how CMS's work. It was a very valuable experience so while not the most technically impressive I still treasure it."
+            }
+        }
+    },
+    "topbar": {
+        "startDate": "August 25, 2016",
+        "endDate": "May 31, 2017",
+        "tech": ["Cascade", "Drupal", "CSS"],
+        "role": ["Developer"]
+    }
+}

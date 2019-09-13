@@ -31,26 +31,26 @@ export default {
           icon: 'android'
         },
         {
-          name: 'Search',
-          url: 'https://search.msu.edu',
-          type: 'fas',
-          icon: 'search'
-        },
-        {
           name: 'Maps',
-          url: 'https://maps.msu.edu',
+          url: '/maps',
           type: 'fas',
           icon: 'map'
         },
         {
           name: 'Qualtrics',
-          url: 'https://qualtrics.msu.edu',
+          url: '/qualtrics',
           type: 'fas',
           icon: 'vote-yea'
         },
         {
+          name: 'Search',
+          url: '/search',
+          type: 'fas',
+          icon: 'search'
+        },
+        {
           name: 'USearch',
-          url: 'https://usearch.msu.edu',
+          url: '/usearch',
           type: 'fas',
           icon: 'search-plus'
         }

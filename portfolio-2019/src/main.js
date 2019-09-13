@@ -5,6 +5,10 @@ import App from './App.vue'
 //Import Pages
 import Home from './components/Pages/Home.vue'
 import MsuApp from './components/Pages/MsuApp.vue'
+import USearch from './components/Pages/USearch.vue'
+import Search from './components/Pages/Search.vue'
+import Maps from './components/Pages/Maps.vue'
+import Qualtrics from './components/Pages/Qualtrics.vue'
 
 // Import Styles
 import './assets/styles/normalize.css'
@@ -26,10 +30,17 @@ Vue.component('font-awesome-icon', FontAwesomeIcon)
 Vue.use(VueRouter)
 const routes = [
   { path: '/', component: Home },
-  { path: '/msuapp', component: MsuApp, props: true }
+  { path: '/msuapp', component: MsuApp, props: true },
+  { path: '/usearch', component: USearch, props: true },
+  { path: '/search', component: Search, props: true },
+  { path: '/maps', component: Maps, props: true },
+  { path: '/qualtrics', component: Qualtrics, props: true }
 ]
 const router = new VueRouter({
-  routes
+  routes,
+  scrollBehavior() {
+    return {x: 0, y: 0}
+  }
 })
 
 Vue.config.productionTip = false
