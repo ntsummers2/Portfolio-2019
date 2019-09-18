@@ -19,16 +19,10 @@ export default {
     return {
       projects: [
         {
-          name: 'MSU iOS App',
+          name: 'MSU App',
           url: '/msuapp',
           type: 'fab',
           icon: 'apple'
-        },
-        {
-          name: 'MSU Android App',
-          url: '/msuapp',
-          type: 'fab',
-          icon: 'android'
         },
         {
           name: 'Maps',
